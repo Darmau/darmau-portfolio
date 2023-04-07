@@ -14,17 +14,10 @@ export default function Home() {
   return (
     <main>
       <Cover />
-      <Intro contents={text} />
+      <Intro/>
       <Stacks />
       <Projects />
       <Contact />
     </main>
   );
 }
-
-const text = [
-  '这是第一行字',
-  '这是第二行字',
-  '这是第三行字',
-  '这是第四行字',
-]
