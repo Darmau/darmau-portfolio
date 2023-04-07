@@ -24,8 +24,9 @@ export default function Stacks() {
             </p>
           </div>
           <div className="mx-auto grid w-full max-w-xl grid-cols-3 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-            {iconList.map((icon) => (
+            {iconList.map((icon, index) => (
               <Image
+              key={index}
               className="max-h-12 w-full object-contain object-left"
               src={icon}
               alt="react"
