@@ -1,14 +1,9 @@
-.g-wrap {
-  margin: auto;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
 .text {
-  font-family: 'Noto Serif SC', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 800px;
   font-size: 40px;
   color: transparent;
   margin: auto;

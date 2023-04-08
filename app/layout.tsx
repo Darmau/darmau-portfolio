@@ -51,7 +51,7 @@ export default function RootLayout({
       lang="zh-CN"
       className={`${noto_serif.variable} ${quattrocento.variable}`}
     >
-      <body className="font-noto">
+      <body>
         <Header id="header" />
         <div style={{ minHeight: minHeight }} className="mt-20 sm:mt-16">
           <ScrollToTop />

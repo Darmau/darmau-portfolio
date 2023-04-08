@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      noto: ['var(--font-noto-serif)', 'serif'],
+      serif: ['var(--font-noto-serif)'],
       title: ['var(--font-title)'],
     },
     extend: {

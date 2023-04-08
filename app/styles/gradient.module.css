@@ -1,29 +1,40 @@
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  perspective: 1000px; /* 添加视角以观看3D动画 */
+
+  /* 将 SVG 设置为 div 容器的中心 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gradient {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  background-image: var(--gradient-fade), var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4), var(--gradient-5), var(--gradient-6);
-  mask-image: var(--mask-set);
-  -webkit-mask-image: var(--mask-set);
-  animation: 8s mask-move infinite alternate ease-in-out;
+  min-width: 1600px;
+  min-height: 1200px;
+  transform-origin: center center;
+  animation: rotation 10s linear infinite;
 }
 
-.mask {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  backdrop-filter: blur(32px);
-}
-
-@keyframes mask-move {
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) scaleY(1.2);
+  }
+  25% {
+    transform: rotate(90deg) scaleY(1);
+  }
   50% {
-    transform: scale(2, 1.2) translate(0, 15vh)
+    transform: rotate(180deg) scaleY(1.2);
+  }
+  75% {
+    transform: rotate(270deg) scaleY(1);
   }
   100% {
-    transform: scale(1.2, .5) translate(0, -20vh);
+    transform: rotate(360deg) scaleY(1.2);
   }
 }
