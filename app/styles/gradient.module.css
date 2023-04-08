@@ -15,10 +15,10 @@
 }
 
 .gradient {
-  min-width: 1600px;
-  min-height: 1200px;
+  min-width: 2000px;
+  min-height: 1600px;
   transform-origin: center center;
-  animation: rotation 10s linear infinite;
+  animation: rotation 18s linear infinite;
 }
 
 @keyframes rotation {

@@ -36,7 +36,7 @@ export default function Header({ id }: { id: string }) {
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <Link href="/" className="-m-1.5 p-1.5">
-          <h1 className="font-bold">darmau.design</h1>
+          <h1 className="font-bold">darmau.dev</h1>
         </Link>
         <div className="flex lg:hidden">
           <button

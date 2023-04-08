@@ -10,7 +10,7 @@ export default function Cover() {
             <h2 className="font-title mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:mt-8 sm:text-6xl">
             To Create
             </h2>
-            <p className="font-serif mt-6 text-lg leading-8 text-gray-600">
+            <p className="font-noto mt-6 text-lg leading-8 text-gray-600">
             不管是设计师还是开发者，都不应该被职位限制住。在AI时代，我们应该成为创造者。
             </p>
           </div>
