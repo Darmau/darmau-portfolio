@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  --gradient-fade: linear-gradient(transparent 80%, antiquewhite 100%);
+  --gradient-1: radial-gradient(40% 40% at top left, #f69d3c, transparent);
+  --gradient-2: radial-gradient(40% 40%, #6E6FCC, transparent);
+  --gradient-3: radial-gradient(40% 40% at bottom right, #17EE87, transparent);
+  --gradient-4: radial-gradient(40% 40% at center right, #17B4EE, transparent);
+  --gradient-5: radial-gradient(40% 40% at center left, #E781A9, transparent);
+  --gradient-6: radial-gradient(40% 40% at top right, #F9E91D, transparent);
+  --mask-1: radial-gradient(ellipse closest-side at 25% 50%,
+      black,
+      transparent);
+  --mask-2: radial-gradient(circle closest-side at bottom right,
+      black,
+      transparent);
+  --mask-3: radial-gradient(ellipse closest-side at 18% 42%,
+      black,
+      transparent);
+  --mask-4: var(--gradient-4);
+  --mask-5: radial-gradient(ellipse closest-side at 20% 20%,
+      black,
+      transparent);
+  --mask-6: var(--gradient-6);
+  --mask-set: var(--mask-1), var(--mask-2), var(--mask-3), var(--mask-4), var(--mask-5), var(--mask-6);
+}

@@ -22,7 +22,7 @@
   background-clip: text;
   background-size: 100% 400%;
   background-position: center 0;
-  animation: textScroll 2s infinite linear alternate;
+  /* animation: textScroll 2s infinite linear alternate; */
 }
 
 @keyframes textScroll {

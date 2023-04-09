@@ -2,7 +2,7 @@ import style from "../styles/intro.module.css";
 
 export default function Intro() {
   return (
-    <div className="p-16 border-y border-black font-noto">
+    <div className="p-16 border-y border-black font-serif">
       <div className={style.text}>
         <h3>我叫李大毛，显然这是个网名。</h3>
         <h3>

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -7,14 +9,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      noto: ['var(--font-title)', 'var(--font-noto-serif)', 'serif'],
-      title: ['var(--font-title)'],
+      title: ["var(--font-title)"],
     },
     extend: {
-    },
+      fontFamily: {
+        'serif': ['var(--font-noto-serif)', ...defaultTheme.fontFamily.serif],
+      }
+    }
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
-
+  plugins: [require("@tailwindcss/forms")],
+};
