@@ -27,7 +27,7 @@ export default function Stacks() {
             {iconList.map((icon, index) => (
               <Image
               key={index}
-              className="max-h-12 w-full object-contain object-left"
+              className="w-full h-auto object-contain object-left"
               src={icon}
               alt="react"
               width={180}
