@@ -11,9 +11,13 @@ module.exports = {
     fontFamily: {
       title: ["var(--font-title)"],
     },
+    
     extend: {
       fontFamily: {
         'serif': ['var(--font-noto-serif)', ...defaultTheme.fontFamily.serif],
+      },
+      colors: {
+        'resume-theme': '#7EFA8D',
       }
     }
   },

@@ -5,7 +5,7 @@ import Gradient from "./components/Gradient";
 import Header from "./components/Header";
 import "./globals.css";
 import { Quattrocento, Noto_Serif_SC } from "next/font/google";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./lib/ScrollToTop";
 
 const noto_serif = Noto_Serif_SC({
   variable: "--font-noto-serif",
