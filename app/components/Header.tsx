@@ -29,14 +29,14 @@ export default function Header({ id }: { id: string }) {
   return (
     <header
       id={id}
-      className={`font-title w-full border-b border-black fixed top-0 z-10 transparent ransition-all duration-300 backdrop-blur-lg  ${
+      className={`w-full border-b border-black fixed top-0 z-10 transparent ransition-all duration-300 backdrop-blur-lg  ${
         visible ? "" : "transform -translate-y-full"
       }`}
     >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <Link href="/" className="-m-1.5 p-1.5">
-          <h1 className="font-bold">darmau.dev</h1>
+          <h1 className="font-title font-bold text-lg">darmau.dev</h1>
         </Link>
         <div className="flex lg:hidden">
           <button
@@ -53,7 +53,7 @@ export default function Header({ id }: { id: string }) {
             <a
               key={item.name}
               href={item.href}
-              className="text-base font-semibold leading-6 text-gray-900"
+              className="text-base leading-6 text-gray-900"
             >
               {item.name}
             </a>

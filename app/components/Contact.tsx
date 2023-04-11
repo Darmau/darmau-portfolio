@@ -62,14 +62,14 @@ export default function Contact() {
   return (
     <>
       {showModal && <Success />}
-      <section className="font-serif relative isolate bg-transparent">
+      <section className="relative isolate bg-transparent">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 border-b border-gray-600 sm:pt-32 lg:border-b-0 lg:border-r lg:border-gray-600 lg:static lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              <h2 className="text-3xl font-serif font-bold tracking-tight text-gray-900">
                 联系我
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 leading-8 text-gray-600">
                 如果你有项目想要和我合作，或者有工作机会，或者只是想跟我聊聊，还可以通过下列方式找到我
               </p>
               <ul className="mt-10 space-y-4 text-base leading-7 text-gray-600">

@@ -14,12 +14,12 @@ const iconList = [
 
 export default function Stacks() {
   return (
-    <div className="font-serif bg-transparent py-24 sm:py-32">
+    <section className="bg-transparent py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">我的技术栈</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <h2 className="text-3xl font-serif font-bold tracking-tight text-gray-900">我的技术栈</h2>
+            <p className="mt-6 leading-8 text-gray-600">
               掌握多少个框架并不重要，用到哪个学哪个就行。最近用得多就熟练，用得少就生疏，没什么大不了的。
             </p>
           </div>
@@ -37,6 +37,6 @@ export default function Stacks() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
