@@ -24,7 +24,7 @@ export default function Intro() {
   ));
 
   return (
-    <section className="p-16 border-y border-black font-serif">
+    <section className="px-8 py-16 border-y border-black font-serif md:py-24">
       <div className="text-center font-bold text-4xl space-y-8 cursor-crosshair">{divs}</div>
     </section>
   );

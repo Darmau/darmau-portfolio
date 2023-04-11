@@ -62,7 +62,7 @@ export default function Contact() {
   return (
     <>
       {showModal && <Success />}
-      <section className="relative isolate bg-transparent">
+      <section id="contact" className="relative isolate bg-transparent">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 border-b border-gray-600 sm:pt-32 lg:border-b-0 lg:border-r lg:border-gray-600 lg:static lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
