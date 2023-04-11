@@ -9,11 +9,15 @@ const introString = [
 ];
 
 export default function Intro() {
-  const generateColorClass = () => `transition-all duration-150 ${style["color-" + (Math.floor(Math.random() * 5) + 1)]}`;
+  const generateColorClass = () =>
+    `${style["color-" + (Math.floor(Math.random() * 5) + 1)]}`;
 
   // 遍历字符串数组，为每个字符串生成一个 div 元素
   const divs = introString.map((string, index) => (
-    <div key={index} className={`${index === 0 ? 'text-gray-700' : 'text-gray-500'}`}>
+    <div
+      key={index}
+      className={`${index === 0 ? "text-gray-700" : "text-gray-500"}`}
+    >
       {/* 遍历字符串中的字符，为每个字符生成一个随机颜色的 span 元素 */}
       {string.split("").map((char, index) => (
         <span key={index} className={generateColorClass()}>
@@ -25,7 +29,9 @@ export default function Intro() {
 
   return (
     <section className="px-8 py-16 border-y border-black font-serif md:py-24">
-      <div className="text-center font-bold text-4xl space-y-8 cursor-crosshair">{divs}</div>
+      <div className="text-center font-bold text-4xl space-y-8 cursor-crosshair">
+        {divs}
+      </div>
     </section>
   );
 }
