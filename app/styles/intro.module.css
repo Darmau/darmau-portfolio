@@ -24,21 +24,26 @@
 }
 
 .color-1:not(:hover) {
+  transition-delay: 2s;
   transition: color 3s ease-in-out;
 }
 
 .color-2:not(:hover) {
+  transition-delay: 2s;
   transition: color 3s ease-in-out;
 }
 
 .color-3:not(:hover) {
+  transition-delay: 2s;
   transition: color 3s ease-in-out;
 }
 
 .color-4:not(:hover) {
+  transition-delay: 2s;
   transition: color 3s ease-in-out;
 }
 
 .color-5:not(:hover) {
+  transition-delay: 2s;
   transition: color 3s ease-in-out;
 }
