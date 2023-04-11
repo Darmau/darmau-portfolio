@@ -1,16 +1,31 @@
 import style from "../styles/intro.module.css";
 
+const introString = [
+  "我叫李大毛，显然这是个网名",
+  "我曾经是交互设计师",
+  "现在的目标是成为视觉表现方向的全栈开发",
+  "业余时间我喜欢摄影 📷 和骑摩托 🏍️",
+  "另外我也很喜欢历史和地理",
+];
+
 export default function Intro() {
+  const generateColorClass = () => `transition-all duration-150 ${style["color-" + (Math.floor(Math.random() * 5) + 1)]}`;
+
+  // 遍历字符串数组，为每个字符串生成一个 div 元素
+  const divs = introString.map((string, index) => (
+    <div key={index} className={`${index === 0 ? 'text-gray-700' : 'text-gray-500'}`}>
+      {/* 遍历字符串中的字符，为每个字符生成一个随机颜色的 span 元素 */}
+      {string.split("").map((char, index) => (
+        <span key={index} className={generateColorClass()}>
+          {char}
+        </span>
+      ))}
+    </div>
+  ));
+
   return (
     <section className="p-16 border-y border-black font-serif">
-      <div className={style.text}>
-        <h3>我叫李大毛，显然这是个网名。</h3>
-        <h3>
-          我曾经是交互设计师，现在的目标是成为视觉表现方向的全栈开发。
-        </h3>
-        <h3>业余时间我喜欢摄影<span className={style.emoji}> 📷 </span>和骑摩托<span className={style.emoji}> 🏍️ </span></h3>
-        <h3>另外我也很喜欢历史和地理</h3>
-      </div>
+      <div className="text-center font-bold text-4xl space-y-8 cursor-crosshair">{divs}</div>
     </section>
   );
 }

@@ -7,8 +7,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   --gradient-fade: linear-gradient(transparent 80%, antiquewhite 100%);
-  --gradient-1: radial-gradient(40% 40% at top left, #f69d3c, transparent);
-  --gradient-2: radial-gradient(40% 40% at center, #6E6FCC, transparent);
+  --gradient-1: radial-gradient(40% 40% at top left, #b74cf1, transparent);
+  --gradient-2: radial-gradient(40% 40% at center, #f8993f, transparent);
   --gradient-3: radial-gradient(40% 40% at bottom right, #17EE87, transparent);
   --gradient-4: radial-gradient(40% 40% at center right, #17B4EE, transparent);
   --gradient-5: radial-gradient(40% 40% at center left, #E781A9, transparent);
