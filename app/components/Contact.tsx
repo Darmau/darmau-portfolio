@@ -64,7 +64,7 @@ export default function Contact() {
       {showModal && <Success />}
       <section id="contact" className="relative isolate bg-transparent">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-          <div className="relative px-6 pb-20 pt-24 border-b border-gray-600 sm:pt-32 lg:border-b-0 lg:border-r lg:border-gray-600 lg:static lg:px-8 lg:py-48">
+          <div className="relative px-6 pb-16 pt-20 border-b border-gray-600 sm:pt-32 lg:border-b-0 lg:border-r lg:border-gray-600 lg:static lg:px-8 lg:py-36">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
               <h2 className="text-3xl font-serif font-bold tracking-tight text-gray-900">
                 联系我
@@ -87,7 +87,7 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                 </li>
-                <li className="flex gap-2 items-center decoration-2 hover:underline underline-offset-4 decoration-indigo-600 cursor-pointer">
+                <li className="flex gap-2 items-center decoration-2">
                   微信公众号：darmau
                 </li>
               </ul>

@@ -5,7 +5,7 @@ export default function Computer() {
   return (
     <figure className="w-full flex flex-col aspect-[4/3]">
       <Spline scene="https://prod.spline.design/5oDZfdQhMJTldExH/scene.splinecode" />
-      <figcaption className="text-sm text-center">
+      <figcaption className="text-sm text-center text-gray-700">
         按回车键或点击红色快门
       </figcaption>
     </figure>
