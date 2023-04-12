@@ -6,7 +6,7 @@ export default function Computer() {
     <figure className="w-full flex flex-col aspect-[4/3]">
       <Spline scene="https://prod.spline.design/5oDZfdQhMJTldExH/scene.splinecode" />
       <figcaption className="text-sm text-center">
-        Press Enter
+        按回车键或点击红色快门
       </figcaption>
     </figure>
   );
