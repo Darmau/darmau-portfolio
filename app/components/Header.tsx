@@ -8,7 +8,6 @@ const navigation = [
   { name: "Blog", href: "https://darmau.design" },
   { name: "GitHub", href: "https://github.com/Darmau" },
   { name: "Resume", href: "/resume" },
-  { name: "Contact", href: "/#contact" },
 ];
 
 export default function Header({ id }: { id: string }) {
@@ -29,7 +28,7 @@ export default function Header({ id }: { id: string }) {
   return (
     <header
       id={id}
-      className={`w-full border-b border-black fixed top-0 z-10 transparent ransition-all duration-300 backdrop-blur-lg  ${
+      className={`w-full border-b border-black fixed top-0 z-5 transparent ransition-all duration-300 backdrop-blur-lg  ${
         visible ? "" : "transform -translate-y-full"
       }`}
     >

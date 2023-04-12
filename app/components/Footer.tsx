@@ -1,27 +1,76 @@
+export default function Footer({ id }: { id: string }) {
+  return (
+    <footer className="transparent border-t border-black" id={id}>
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+        <nav
+          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          aria-label="Footer"
+        >
+          {navigation.main.map((item) => (
+            <div key={item.name} className="pb-6">
+              <a
+                href={item.href}
+                target="_blank"
+                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              >
+                {item.name}
+              </a>
+            </div>
+          ))}
+        </nav>
+        <div className="mt-10 flex justify-center space-x-10">
+          {navigation.social.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              target="_blank"
+              className="text-gray-400 hover:text-gray-500"
+            >
+              <span className="sr-only">{item.name}</span>
+              <item.icon className="h-6 w-6" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+          &copy; 2023 李大毛没有猫. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
+
 const navigation = {
   main: [
-    { name: 'Blog', href: 'https://darmau.design' },
-    { name: 'GitHub', href: 'https://github.com/Darmau' },
-    { name: 'Resume', href: '/resume' },
-    { name: 'Contact', href: '/#contact' },
+    { name: "Blog", href: "https://darmau.design" },
+    { name: "GitHub", href: "https://github.com/Darmau" },
+    { name: "Resume", href: "/resume" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Twitter",
+      href: "https://twitter.com/darmaulee",
+      icon: (props: any) => (
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        </svg>
+      ),
+    },
+    {
+      name: "Dribbble",
+      href: "https://dribbble.com/darmau",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+            d="M2 12C2 14.4799 2.90795 16.7522 4.40879 18.5018C4.43946 18.5451 4.47481 18.5859 4.51482 18.6235C6.34842 20.6931 9.02483 22 12 22C12.9925 22 13.9517 21.8546 14.8575 21.5839C14.8689 21.5808 14.8803 21.5773 14.8915 21.5737C18.0764 20.6096 20.5954 18.0957 21.5668 14.914C21.5801 14.8789 21.5907 14.8433 21.5987 14.8074C21.8599 13.9164 22 12.9742 22 12C22 9.53782 21.105 7.28026 19.6232 5.53568C19.5887 5.48483 19.5478 5.43723 19.5007 5.39407C17.6667 3.31424 14.9836 2 12 2C7.48684 2 3.66117 5.00723 2.42205 9.12262C2.41512 9.14265 2.40891 9.16311 2.40346 9.18397L2.40125 9.19265C2.14012 10.0837 2 11.0258 2 12ZM15.5532 19.5972C17.5001 18.6833 19.0403 17.0426 19.8227 15.0264C18.1784 14.2223 16.6422 13.8502 15.2242 13.7878C15.5545 15.7224 15.6646 17.6606 15.5532 19.5972ZM14.8987 12.18C16.6664 12.197 18.4684 12.6172 20.2617 13.45C20.3441 12.9789 20.3871 12.4944 20.3871 12C20.3871 10.2337 19.8387 8.59337 18.9031 7.24041C17.611 8.55313 16.0836 9.52695 14.3441 10.1566C14.5558 10.8302 14.7407 11.5048 14.8987 12.18ZM12.7965 10.613C12.9716 11.1685 13.1273 11.7243 13.2637 12.2805C10.344 12.6701 7.55844 14.184 5.10957 16.7779C4.16628 15.4214 3.6129 13.7743 3.6129 12C3.6129 11.4399 3.66805 10.8925 3.77319 10.3629C5.65841 10.7999 7.43739 11.0162 9.09701 11.0162C10.4059 11.0162 11.6409 10.8814 12.7965 10.613ZM13.8147 8.62136C15.3708 8.05507 16.7257 7.18052 17.858 6.00238C16.3454 4.52463 14.2775 3.6129 12 3.6129C11.8111 3.6129 11.6236 3.61918 11.4378 3.63153C12.3947 5.28607 13.1873 6.95052 13.8147 8.62136ZM9.73873 3.92233C10.7644 5.63052 11.6052 7.34782 12.26 9.0701C9.93837 9.57863 7.24667 9.49751 4.24092 8.81452C5.21595 6.44733 7.24388 4.62128 9.73873 3.92233ZM13.5974 13.8515C13.9757 15.9589 14.0758 18.068 13.8953 20.1713C13.2861 20.3125 12.6516 20.3871 12 20.3871C9.73279 20.3871 7.67325 19.4836 6.16244 18.0175C7.78551 16.269 10.3154 14.2567 13.5974 13.8515Z"
             clipRule="evenodd"
           />
         </svg>
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "https://www.instagram.com/darmaulee/",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -33,30 +82,56 @@ const navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-        </svg>
-      ),
-    },
-    {
-      name: 'GitHub',
-      href: '#',
+      name: "小红书",
+      href: "https://www.xiaohongshu.com/user/profile/5f8915a40000000001005766",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
+            d="M3.84884 14.7359H2.88445C2.88445 15.892 3.83775 15.9944 3.83775 15.9944H4.3255C5.3047 15.9944 5.34533 14.8458 5.34533 14.8458V8H3.84884V14.7359Z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          />
+          <path
+            d="M1.35473 10.0469H2.88446C2.88446 10.0469 2.90661 14.7093 1.8203 15.1869L1 13.6454C1 13.6454 1.48775 12.0938 1.35473 10.0469Z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          />
+          <path
+            d="M6.32083 10.0469H7.85056C7.71754 12.0938 8.20527 13.6454 8.20527 13.6454L7.38499 15.1869C6.29866 14.7093 6.32083 10.0469 6.32083 10.0469Z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          />
+          <path
+            d="M9.99271 11.457H8.99596C8.2865 11.4267 8.72992 10.5321 8.72992 10.5321L9.95662 8H11.3903L10.3606 10.0148C10.3128 10.111 10.3808 10.2251 10.486 10.2251H10.581L10.6661 10.0469H12.0997L10.8631 12.5318C10.8152 12.628 10.8833 12.742 10.9886 12.742H11.8153L11.1538 13.974H9.4985C8.78906 13.9436 9.23246 13.0491 9.23246 13.0491L9.99271 11.457Z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          />
+          <path
+            d="M9.21397 14.4705C9.21397 14.4705 9.03101 14.4875 8.90908 14.3626L8.16647 15.8295C8.16647 15.8295 8.28842 16 8.53778 16H10.3779L11.1649 14.4705H9.21397Z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.7209 10.0469H14.7749V14.5199H16.2086V15.9944H11.1649L11.878 14.5199H13.297V10.0469H12.3362V8.48516H15.7209V10.0469Z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M21.5552 11.1993H21.3811V10.1889C21.3811 9.24298 20.6336 8.47624 19.7117 8.47624H19.1351V8H17.6718V8.47624H16.7532V10.0076H17.6718V11.1993H16.2086V12.7307H17.6718V15.9944H19.1351V12.7307H21.1487C21.3466 12.7307 21.5072 12.8953 21.5072 13.0985V14.7065H20.1115C20.1115 15.4178 20.6736 15.9944 21.3669 15.9944H21.7446C22.4379 15.9944 23 15.4178 23 14.7065V12.6814C23 11.8629 22.3532 11.1993 21.5552 11.1993ZM19.1351 10.0076H19.6608C19.7865 10.0076 19.8884 10.1121 19.8884 10.2411V11.1993H19.1351V10.0076Z"
+          />
+          <path
             fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            d="M22.2537 8.48516C22.6537 8.48516 22.9779 8.81787 22.9779 9.22815C22.9779 9.63845 22.6537 9.97115 22.2537 9.97115H21.5295V9.22815C21.5295 8.81787 21.8537 8.48516 22.2537 8.48516Z"
             clipRule="evenodd"
           />
         </svg>
       ),
     },
     {
-      name: 'YouTube',
-      href: '#',
+      name: "YouTube",
+      href: "https://www.youtube.com/@darmau",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -68,33 +143,4 @@ const navigation = {
       ),
     },
   ],
-}
-
-export default function Footer({ id }: { id: string }) {
-  return (
-    <footer className="transparent border-t border-black" id={id}>
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-          {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a href={item.href} target="_blank" className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
-          {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  )
-}
+};

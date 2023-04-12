@@ -11,17 +11,17 @@ dependencies:
     specifier: ^2.0.17
     version: 2.0.17(react@18.2.0)
   '@splinetool/loader':
-    specifier: ^0.9.291
-    version: 0.9.291(three@0.151.3)
+    specifier: ^0.9.293
+    version: 0.9.293(three@0.151.3)
   '@splinetool/r3f-spline':
     specifier: ^1.0.2
-    version: 1.0.2(@react-three/fiber@8.12.0)(@splinetool/loader@0.9.291)
+    version: 1.0.2(@react-three/fiber@8.12.0)(@splinetool/loader@0.9.293)
   '@splinetool/react-spline':
     specifier: ^2.2.6
-    version: 2.2.6(@splinetool/runtime@0.9.291)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.2.6(@splinetool/runtime@0.9.293)(react-dom@18.2.0)(react@18.2.0)
   '@splinetool/runtime':
-    specifier: ^0.9.291
-    version: 0.9.291
+    specifier: ^0.9.293
+    version: 0.9.293
   '@tailwindcss/forms':
     specifier: ^0.5.3
     version: 0.5.3(tailwindcss@3.3.1)
@@ -70,6 +70,9 @@ dependencies:
   typescript:
     specifier: 5.0.4
     version: 5.0.4
+  yet-another-react-lightbox:
+    specifier: ^3.4.0
+    version: 3.4.0(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@types/react-syntax-highlighter':
@@ -403,8 +406,8 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: false
 
-  /@splinetool/loader@0.9.291(three@0.151.3):
-    resolution: {integrity: sha512-KUQn91WErjb88aMlNazTN4s4wPcdM8TqQjPnyunidq0rreos3OJYph3hjDRYFobbSzdqQlisESVZbXnIPBdxCg==}
+  /@splinetool/loader@0.9.293(three@0.151.3):
+    resolution: {integrity: sha512-WH1e+Uk8I7cX48ASql6mjjdFe/8cTnHSImYJZ8FOYX2O9aqtjlTKUE1FKyfPwDeEgz4TERdJmXaD3mEBgFVpeg==}
     peerDependencies:
       three: '>=0.133.0'
     dependencies:
@@ -412,32 +415,32 @@ packages:
       three: 0.151.3
     dev: false
 
-  /@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.12.0)(@splinetool/loader@0.9.291):
+  /@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.12.0)(@splinetool/loader@0.9.293):
     resolution: {integrity: sha512-Fl1qboRpTE8yJm4BAe1l6j3Xgh3HwIzvtdX2LjCpBiSo21+j0b2rilJpLHfsXJndrq4Hegz6oEUKlPvVWumaHg==}
     peerDependencies:
       '@react-three/fiber': '>=7.0.0'
       '@splinetool/loader': '>=0.9.19'
     dependencies:
       '@react-three/fiber': 8.12.0(react-dom@18.2.0)(react@18.2.0)(three@0.151.3)
-      '@splinetool/loader': 0.9.291(three@0.151.3)
+      '@splinetool/loader': 0.9.293(three@0.151.3)
     dev: false
 
-  /@splinetool/react-spline@2.2.6(@splinetool/runtime@0.9.291)(react-dom@18.2.0)(react@18.2.0):
+  /@splinetool/react-spline@2.2.6(@splinetool/runtime@0.9.293)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-y9L2VEbnC6FNZZu8XMmWM9YTTTWal6kJVfP05Amf0QqDNzCSumKsJxZyGUODvuCmiAvy0PfIfEsiVKnSxvhsDw==}
     peerDependencies:
       '@splinetool/runtime': '*'
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
     dependencies:
-      '@splinetool/runtime': 0.9.291
+      '@splinetool/runtime': 0.9.293
       lodash.debounce: 4.0.8
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-merge-refs: 2.0.1
     dev: false
 
-  /@splinetool/runtime@0.9.291:
-    resolution: {integrity: sha512-Y/We9LtvBFxwtewFjrv1DYNM+9+7wijO1HVHegp4MdVHiyO7w9agVhuDAj6a1HSIXwKXdudTUlYIjsG+izzkoQ==}
+  /@splinetool/runtime@0.9.293:
+    resolution: {integrity: sha512-J8Ec/KZmDBxEuJFBCaxPNrKyNnrRiJ0SinSAqkiDEDtMlc8Cs0JQzXT73F2Oo4jZEXxHX/ySZ6/Ndzh2jjB5Cw==}
     dependencies:
       on-change: 4.0.2
       semver-compare: 1.0.0
@@ -890,7 +893,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001477
-      electron-to-chromium: 1.4.357
+      electron-to-chromium: 1.4.359
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10(browserslist@4.21.5)
     dev: true
@@ -1138,8 +1141,8 @@ packages:
       domhandler: 5.0.3
     dev: false
 
-  /electron-to-chromium@1.4.357:
-    resolution: {integrity: sha512-UTkCbNTAcGXABmEnQrGcW4m3cG6fcyBfD4KDF0iyEAlbrGZiY9dmslyDAGOD1Kr5biN2F743Y30aRCOtau35Vw==}
+  /electron-to-chromium@1.4.359:
+    resolution: {integrity: sha512-OoVcngKCIuNXtZnsYoqlCvr0Cf3NIPzDIgwUfI9bdTFjXCrr79lI0kwQstLPZ7WhCezLlGksZk/BFAzoXC7GDw==}
     dev: true
 
   /emoji-regex@9.2.2:
@@ -1295,7 +1298,7 @@ packages:
       eslint-module-utils: 2.7.4(@typescript-eslint/parser@5.58.0)(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.5.5)(eslint@8.38.0)
       eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.58.0)(eslint-import-resolver-typescript@3.5.5)(eslint@8.38.0)
       get-tsconfig: 4.5.0
-      globby: 13.1.3
+      globby: 13.1.4
       is-core-module: 2.12.0
       is-glob: 4.0.3
       synckit: 0.8.5
@@ -1737,8 +1740,8 @@ packages:
       slash: 3.0.0
     dev: false
 
-  /globby@13.1.3:
-    resolution: {integrity: sha512-8krCNHXvlCgHDpegPzleMq07yMYTO2sXKASmZmquEYWEmCx6J5UTRbp5RwMJkTJGtcQ44YpiUYUiN0b9mzy8Bw==}
+  /globby@13.1.4:
+    resolution: {integrity: sha512-iui/IiiW+QrJ1X1hKH5qwlMQyv34wJAYwH1vrf8b9kBA4sNiif3gKsMHa+BrdnOpEudWjpotfa7LrTzB1ERS/g==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
@@ -3252,6 +3255,17 @@ packages:
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+
+  /yet-another-react-lightbox@3.4.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5g96NxdCPeRC8S2xC9u70ETa9EqicUm5qAUPTSI7pp+ADZZqbH5sNFT7culxkuli05xdUrjsvWoCdaaRH4rx8w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}

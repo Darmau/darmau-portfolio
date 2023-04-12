@@ -1,6 +1,7 @@
 .gradient {
   width: 100vw;
   height: 100vh;
+  
   z-index: -1;
   position: fixed;
   top: 0;
@@ -8,15 +9,6 @@
   mask-image: var(--mask-set);
   -webkit-mask-image: var(--mask-set);
   animation: 15s mask-move infinite alternate ease-in-out;
-}
-
-.mask {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  backdrop-filter: blur(32px);
 }
 
 @keyframes mask-move {
