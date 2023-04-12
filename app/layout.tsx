@@ -51,6 +51,14 @@ export default function RootLayout({
       lang="zh-CN"
       className={`${noto_serif.variable} ${quattrocento.variable}`}
     >
+      <head>
+        <script
+          async
+          defer
+          data-website-id="ac031c1c-b0c4-4f13-8930-78be63186d9a"
+          src="https://analytics.darmau.design/umami.js"
+        ></script>
+      </head>
       <body>
         <Header id="header" />
         <div style={{ minHeight: minHeight }} className="mt-20 sm:mt-16">
