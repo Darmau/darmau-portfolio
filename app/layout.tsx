@@ -61,7 +61,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header id="header" />
-        <div style={{ minHeight: minHeight }} className="mt-20 sm:mt-16">
+        <div style={{ minHeight: minHeight }} className="mt-24">
           <ScrollToTop />
           {children}
         </div>

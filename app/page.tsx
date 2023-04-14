@@ -6,6 +6,7 @@ import Cover from "./components/Cover";
 import Contact from "./components/Contact";
 import client from "./lib/apollo-client";
 import { gql } from "@apollo/client";
+import Service from "./components/Service";
 
 async function getPortfolios() {
   const { data } = await client.query({
@@ -16,8 +17,8 @@ async function getPortfolios() {
 }
 
 export const metadata: Metadata = {
-  title: "darmau.dev",
-  description: "darmau's personal website",
+  title: "李大毛没有猫",
+  description: "设计师、开发者李大毛",
 };
 
 export default async function Home() {
@@ -29,6 +30,7 @@ export default async function Home() {
       <Intro/>
       <Stacks />
       <Projects portfolios={data} />
+      <Service />
       <Contact />
     </main>
   );
