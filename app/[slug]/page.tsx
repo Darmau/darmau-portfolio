@@ -1,6 +1,7 @@
 import { gql } from "@apollo/client";
 import client from "../lib/apollo-client";
 import Body from "./Body";
+import { Metadata } from "next";
 
 type Portfolio = {
   attributes: {
@@ -38,6 +39,15 @@ async function getPortfolio(slug: string) {
 
   return {
     portfolio: portfolioData[0].attributes,
+  };
+}
+
+export async function generateMetadata(context: any) {
+  const { slug } = await context.params;
+  const {portfolio} = await getPortfolio(slug);
+  return {
+    title: portfolio.title,
+    description: portfolio.description,
   };
 }
 
