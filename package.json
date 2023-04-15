@@ -1,6 +1,6 @@
 {
   "name": "darmau-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,10 +12,10 @@
     "@apollo/client": "^3.7.12",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
-    "@splinetool/loader": "^0.9.295",
+    "@splinetool/loader": "^0.9.297",
     "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.295",
+    "@splinetool/runtime": "^0.9.297",
     "@tailwindcss/forms": "^0.5.3",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
