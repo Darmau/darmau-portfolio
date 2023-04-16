@@ -11,17 +11,17 @@ dependencies:
     specifier: ^2.0.17
     version: 2.0.17(react@18.2.0)
   '@splinetool/loader':
-    specifier: ^0.9.297
-    version: 0.9.297(three@0.151.3)
+    specifier: ^0.9.298
+    version: 0.9.298(three@0.151.3)
   '@splinetool/r3f-spline':
     specifier: ^1.0.2
-    version: 1.0.2(@react-three/fiber@8.12.1)(@splinetool/loader@0.9.297)
+    version: 1.0.2(@react-three/fiber@8.12.1)(@splinetool/loader@0.9.298)
   '@splinetool/react-spline':
     specifier: ^2.2.6
-    version: 2.2.6(@splinetool/runtime@0.9.297)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.2.6(@splinetool/runtime@0.9.298)(react-dom@18.2.0)(react@18.2.0)
   '@splinetool/runtime':
-    specifier: ^0.9.297
-    version: 0.9.297
+    specifier: ^0.9.298
+    version: 0.9.298
   '@tailwindcss/forms':
     specifier: ^0.5.3
     version: 0.5.3(tailwindcss@3.3.1)
@@ -80,13 +80,13 @@ devDependencies:
     version: 15.5.6
   autoprefixer:
     specifier: ^10.4.14
-    version: 10.4.14(postcss@8.4.21)
+    version: 10.4.14(postcss@8.4.22)
   postcss:
-    specifier: ^8.4.21
-    version: 8.4.21
+    specifier: ^8.4.22
+    version: 8.4.22
   tailwindcss:
     specifier: ^3.3.1
-    version: 3.3.1(postcss@8.4.21)
+    version: 3.3.1(postcss@8.4.22)
 
 packages:
 
@@ -406,8 +406,8 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: false
 
-  /@splinetool/loader@0.9.297(three@0.151.3):
-    resolution: {integrity: sha512-TB6VgftXqsjx7CkeSRNZRm3IUE1Nm5XK9TxTL7/8FVhTkuReWT4tFjjVTHkOIX4nEB3tVDJug5R/f7/DpIEDnA==}
+  /@splinetool/loader@0.9.298(three@0.151.3):
+    resolution: {integrity: sha512-Oj5wfUc2o8PLeTsFBnNzsYPiRGcb9ENxuzdnL/5HhDmxgC2zLsGnpNafLDOIVc1GW4DAbkiEx8Er+8ZxWXovgA==}
     peerDependencies:
       three: '>=0.133.0'
     dependencies:
@@ -415,32 +415,32 @@ packages:
       three: 0.151.3
     dev: false
 
-  /@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.12.1)(@splinetool/loader@0.9.297):
+  /@splinetool/r3f-spline@1.0.2(@react-three/fiber@8.12.1)(@splinetool/loader@0.9.298):
     resolution: {integrity: sha512-Fl1qboRpTE8yJm4BAe1l6j3Xgh3HwIzvtdX2LjCpBiSo21+j0b2rilJpLHfsXJndrq4Hegz6oEUKlPvVWumaHg==}
     peerDependencies:
       '@react-three/fiber': '>=7.0.0'
       '@splinetool/loader': '>=0.9.19'
     dependencies:
       '@react-three/fiber': 8.12.1(react-dom@18.2.0)(react@18.2.0)(three@0.151.3)
-      '@splinetool/loader': 0.9.297(three@0.151.3)
+      '@splinetool/loader': 0.9.298(three@0.151.3)
     dev: false
 
-  /@splinetool/react-spline@2.2.6(@splinetool/runtime@0.9.297)(react-dom@18.2.0)(react@18.2.0):
+  /@splinetool/react-spline@2.2.6(@splinetool/runtime@0.9.298)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-y9L2VEbnC6FNZZu8XMmWM9YTTTWal6kJVfP05Amf0QqDNzCSumKsJxZyGUODvuCmiAvy0PfIfEsiVKnSxvhsDw==}
     peerDependencies:
       '@splinetool/runtime': '*'
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
     dependencies:
-      '@splinetool/runtime': 0.9.297
+      '@splinetool/runtime': 0.9.298
       lodash.debounce: 4.0.8
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-merge-refs: 2.0.1
     dev: false
 
-  /@splinetool/runtime@0.9.297:
-    resolution: {integrity: sha512-RibSiU93SQrdMfWpwgQz4wGIBqxOHBbv7Kq2U3zCWNDQDKzCf7e3F4C5QtqLJbkxhhhWf1b8UPX0+NUtIqEHeQ==}
+  /@splinetool/runtime@0.9.298:
+    resolution: {integrity: sha512-S+vKP4WFX9UeSMlN22aqVaK1Liojkkz+RGpyK5uNQysUdeB/1akx0wRjZ9qZxTSskfmgvzfY/EgWV6qTsGG8Ig==}
     dependencies:
       on-change: 4.0.2
       semver-compare: 1.0.0
@@ -458,7 +458,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.3.1(postcss@8.4.21)
+      tailwindcss: 3.3.1(postcss@8.4.22)
     dev: false
 
   /@types/async-retry@1.2.1:
@@ -836,7 +836,7 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /autoprefixer@10.4.14(postcss@8.4.21):
+  /autoprefixer@10.4.14(postcss@8.4.22):
     resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -848,7 +848,7 @@ packages:
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.21
+      postcss: 8.4.22
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -895,7 +895,7 @@ packages:
       caniuse-lite: 1.0.30001478
       electron-to-chromium: 1.4.365
       node-releases: 2.0.10
-      update-browserslist-db: 1.0.10(browserslist@4.21.5)
+      update-browserslist-db: 1.0.11(browserslist@4.21.5)
     dev: true
 
   /busboy@1.6.0:
@@ -2536,27 +2536,27 @@ packages:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
 
-  /postcss-import@14.1.0(postcss@8.4.21):
+  /postcss-import@14.1.0(postcss@8.4.22):
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
-      postcss: 8.4.21
+      postcss: 8.4.22
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.3
 
-  /postcss-js@4.0.1(postcss@8.4.21):
+  /postcss-js@4.0.1(postcss@8.4.22):
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.4.21
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.21
+      postcss: 8.4.22
 
-  /postcss-load-config@3.1.4(postcss@8.4.21):
+  /postcss-load-config@3.1.4(postcss@8.4.22):
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -2569,16 +2569,16 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.21
+      postcss: 8.4.22
       yaml: 1.10.2
 
-  /postcss-nested@6.0.0(postcss@8.4.21):
+  /postcss-nested@6.0.0(postcss@8.4.22):
     resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.21
+      postcss: 8.4.22
       postcss-selector-parser: 6.0.11
 
   /postcss-selector-parser@6.0.11:
@@ -2600,8 +2600,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /postcss@8.4.21:
-    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
+  /postcss@8.4.22:
+    resolution: {integrity: sha512-XseknLAfRHzVWjCEtdviapiBtfLdgyzExD50Rg2ePaucEesyh8Wv4VPdW0nbyDa1ydbrAxV19jvMT4+LFmcNUA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -3014,7 +3014,7 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /tailwindcss@3.3.1(postcss@8.4.21):
+  /tailwindcss@3.3.1(postcss@8.4.22):
     resolution: {integrity: sha512-Vkiouc41d4CEq0ujXl6oiGFQ7bA3WEhUZdTgXAhtKxSy49OmKs8rEfQmupsfF0IGW8fv2iQkp1EVUuapCFrZ9g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -3035,11 +3035,11 @@ packages:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.21
-      postcss-import: 14.1.0(postcss@8.4.21)
-      postcss-js: 4.0.1(postcss@8.4.21)
-      postcss-load-config: 3.1.4(postcss@8.4.21)
-      postcss-nested: 6.0.0(postcss@8.4.21)
+      postcss: 8.4.22
+      postcss-import: 14.1.0(postcss@8.4.22)
+      postcss-js: 4.0.1(postcss@8.4.22)
+      postcss-load-config: 3.1.4(postcss@8.4.22)
+      postcss-nested: 6.0.0(postcss@8.4.22)
       postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
@@ -3161,8 +3161,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
-  /update-browserslist-db@1.0.10(browserslist@4.21.5):
-    resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
+  /update-browserslist-db@1.0.11(browserslist@4.21.5):
+    resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
