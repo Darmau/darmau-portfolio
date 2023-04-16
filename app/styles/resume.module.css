@@ -1,15 +1,3 @@
-.paper::before {
-  content: "获取完整简历请联系本人";
-  position: absolute;
-  text-align: center;
-  top: -0.9em; /* 负值使伪元素上移 */
-  left: 40%;
-  background: white;
-  padding: 0 0.5em;
-  font-size: 14px;
-  color: #4b5563;
-}
-
 .category {
   writing-mode: vertical-lr;
   letter-spacing: 4px;

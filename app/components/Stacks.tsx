@@ -20,7 +20,7 @@ export default function Stacks() {
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <h2 className="text-3xl font-serif font-bold tracking-tight text-gray-900">我的技术栈</h2>
             <p className="mt-6 leading-8 text-gray-600">
-              掌握多少个框架并不重要，用到哪个学哪个就行。最近用得多就熟练，用得少就生疏，没什么大不了的。
+              掌握多少个框架并不重要，重要的是学习能力。最近用得多就熟练，用得少就生疏。
             </p>
           </div>
           <div className="mx-auto grid w-full max-w-xl grid-cols-3 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">

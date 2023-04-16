@@ -1,13 +1,13 @@
 import Image from "next/image";
 import style from "../styles/resume.module.css";
-import { LinkIcon } from "@heroicons/react/20/solid";
+import { LinkIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 export default function Resume() {
   return (
     <main
-      className={`relative bg-transparent border border-black mt-16 mb-4 py-12 lg:my-16 lg:py-14 px-6 max-w-5xl mx-auto gap-8 lg:px-8 ${style.paper}`}
+      className={`relative bg-transparent border border-black mt-16 mb-4 pt-8 pb-12 lg:my-16 lg:py-14 px-6 max-w-5xl mx-auto gap-8 lg:px-8 ${style.paper}`}
     >
-      <header className="flex justify-between">
+      <header className="space-y-8 sm:space-y-0 sm:flex sm:justify-between">
         <div className="flex gap-4">
           <div>
             <Image
@@ -175,6 +175,15 @@ export default function Resume() {
           </section>
         </aside>
       </article>
+
+      {/* 提醒查看完整简历 */}
+      <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
+        <div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
+          <p className="text-sm leading-6 text-white">
+              查看完整简历请联系我
+          </p>
+        </div>
+      </div>
     </main>
   );
 }
