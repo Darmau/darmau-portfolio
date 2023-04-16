@@ -49,7 +49,7 @@ const GET_PORTFOLIOS = gql`
           cover {
             data {
               attributes {
-                formats
+                url
               }
             }
           }

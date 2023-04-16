@@ -25,7 +25,7 @@ function useCustomReplace({ html }: { html: string }) {
       switch (domNode.name) {
         case "p":
           return (
-            <section className="text-base leading-8 text-gray-700 mt-4 mb-6">
+            <section className="text-base leading-8 text-gray-900 mt-4 mb-6">
               {domToReact(domNode.children, options)}
             </section>
           );

@@ -11,11 +11,12 @@ type Portfolio = {
     cover: {
       data: {
         attributes: {
-          formats: {
-            large: {
-              url: string;
-            };
-          };
+          url: string;
+          // formats: {
+          //   large: {
+          //     url: string;
+          //   };
+          // };
         };
       };
     };
@@ -64,8 +65,7 @@ export default function Projects({ portfolios }: { portfolios: Portfolio[] }) {
           <Image
             className="aspect-[4/3]"
             src={
-              portfolios[hoverIndex].attributes.cover.data.attributes.formats
-                .large!.url
+              portfolios[hoverIndex].attributes.cover.data.attributes.url
             }
             alt={portfolios[hoverIndex].attributes.title}
             width={800}
