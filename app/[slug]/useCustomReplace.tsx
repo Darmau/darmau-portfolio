@@ -13,7 +13,6 @@ import Image from "next/image";
 import Link from "next/link";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import imageLoader from "../lib/loaders";
 
 function isTextNode(node: any): node is Text {
   return node.type === "text";
@@ -40,7 +39,6 @@ function useCustomReplace({ html }: { html: string }) {
                 width={1280}
                 height={720}
                 quality={70}
-                loader={imageLoader}
                 alt={domNode.attribs.src ?? "image"}
               />
             </div>
