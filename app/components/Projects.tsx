@@ -64,7 +64,7 @@ export default function Projects({ portfolios }: { portfolios: Portfolio[] }) {
         </div>
         <div className="md:col-span-1">
           <Image
-            className="aspect-[4/3]"
+            className="aspect-[4/3] border border-gray-700"
             src={
               portfolios[hoverIndex].attributes.cover.data.attributes.url
             }
