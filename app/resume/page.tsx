@@ -5,7 +5,7 @@ import { LinkIcon, XMarkIcon } from "@heroicons/react/20/solid";
 export default function Resume() {
   return (
     <main
-      className={`relative bg-transparent border border-black mt-16 mb-4 pt-8 pb-12 lg:my-16 lg:py-14 px-6 max-w-5xl mx-auto gap-8 lg:px-8 ${style.paper}`}
+      className={`relative bg-transparent mt-16 mb-4 pt-8 pb-12 lg:my-16 lg:py-14 px-6 max-w-5xl mx-auto gap-8 lg:px-8 ${style.paper}`}
     >
       <header className="space-y-8 sm:space-y-0 sm:flex sm:justify-between">
         <div className="flex gap-4">
