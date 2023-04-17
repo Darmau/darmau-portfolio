@@ -5,7 +5,7 @@
   z-index: -1;
   position: fixed;
   top: 0;
-  background-image: var(--gradient-fade), var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4), var(--gradient-5), var(--gradient-6);
+  background-image: var(--gradient-fade), var(--gradient-1), var(--gradient-3), var(--gradient-5), var(--gradient-6);
   mask-image: var(--mask-set);
   -webkit-mask-image: var(--mask-set);
   animation: 15s mask-move infinite alternate ease-in-out;
