@@ -52,8 +52,7 @@ export default function Resume() {
       </header>
       <div className="py-16 border-b border-black">
         <p className="font-bold font-serif text-2xl leading-relaxed">
-          曾经是 UX Designer，目前是 Front-end Developer，正在努力成为 Creative
-          Coder。既然前端喜欢往后端卷，那我就从设计往前端卷。
+          作为一名具备良好审美和设计能力的前端开发者，我深知如何将界面设计和技术开发紧密结合。我的设计背景赋予我能够设计出极具想象力和创意的网站，同时我的前端开发经验更使我能够将这些设计转化为高效、流畅的网页交互。
         </p>
       </div>
       <article className="w-full py-16 flex flex-col gap-16 md:grid md:grid-cols-4">
@@ -87,8 +86,13 @@ export default function Resume() {
                   <LinkIcon className="h-5 w-5 text-gray-600 group-hover:text-violet-600 group-hover:animate-bounce" />
                 </h3>
                 <p className="text-gray-800">
-                  个人项目。独立完成界面设计、前端开发和后端接口。使用了React、Typescript、Next.js、GraphQL、Node.js、Tailwind等技术，通过next/image和CDN实现图片优化，着重考虑了美观及访问体验。并另外部署有Node.js
-                  API、访问分析、评论以及推送通知。
+                  可可托海是我独立完成的一个博客项目，包括设计、后台搭建和前端开发。该项目采用了多种技术栈，后台使用了
+                  Strapi 框架，前端使用了 Next.js 和 TypeScript，并利用 GraphQL
+                  进行数据交互。同时，样式采用了 Tailwind CSS
+                  构建，并整合自行开发的 Node 接口 Fetch Exif。
+                </p>
+                <p className="text-gray-800">
+                  该博客项目的特点在于设计精美，页面访问速度快，并且提供中英双语，优化了无障碍访问和SEO表现，提供了优秀的浏览体验。
                 </p>
               </li>
               <li className="space-y-2">
@@ -103,7 +107,48 @@ export default function Resume() {
                   <LinkIcon className="h-5 w-5 text-gray-600 group-hover:text-violet-600 group-hover:animate-bounce" />
                 </h3>
                 <p className="text-gray-800">
-                  Figma插件。通过Figma的API，将Figma中的选定元素生成为预设的Tailwind类名，并复制到剪贴板。
+                  Tailwind Export 是一款基于 Figma 平台并使用 TypeScript
+                  开发的插件，它可以帮助 UI
+                  设计师和开发人员在设计界面的过程中，快速生成类似于 Tailwind
+                  CSS 这样的样式类名。
+                </p>
+                <p className="text-gray-800">
+                  Tailwind Export
+                  可以将矩形、椭圆形、文本和框架等元素的各种属性提取出来，包括边框宽度、颜色、填充色、字体、字号、行高等，并根据
+                  Tailwind CSS 的 CSS 原子类规则，自动生成相应的样式类名代码。
+                </p>
+                <p className="text-gray-800">
+                  同时该插件会匹配 Figma 中的颜色定义， 通过 Tailwind
+                  预设颜色变量找到最接近的 tailwind
+                  颜色定义，以保证生成代码的准确性。这大大加速了设计与开发之间的迭代速度，使得设计师和开发人员不再需要动手写样式代码，只需要专心完成自己的工作。
+                </p>
+                <p className="text-gray-800">
+                  总之，Tailwind Export 是一个快速、便捷的 Figma
+                  插件，可有效提升设计和开发过程中的效率，并且符合现代前端开发的主流标准和实践。
+                </p>
+              </li>
+              <li className="space-y-2">
+                <h3 className="font-serif font-bold text-lg">
+                  <a
+                    href="https://github.com/Darmau/fetch-exif"
+                    target="_blank"
+                    className="hover:underline hover:underline-offset-4 group-hover:decoration-violet-900"
+                  >
+                    Fetch EXIF
+                  </a>
+                </h3>
+                <p className="text-gray-800">
+                  fetch-exif 是一个基于 Node.js 和 Express
+                  框架的后端服务项目。该项目提供了一个接口，可以接收传入的图片
+                  URL，然后通过 Node.js
+                  的请求库，发送异步请求获取这张图片的原始信息。
+                </p>
+                <p className="text-gray-800">
+                  fetch-exif 将会解析出格式化的 exif
+                  信息，并将其返回给前端调用方。用户能够通过此接口获得原始图片的拍摄时间、制造商、型号、ISO、GPS等重要信息。
+                </p>
+                <p className="text-gray-800">
+                  由于使用了缓存机制，该接口的运行速度极快。
                 </p>
               </li>
               <li className="space-y-2">
@@ -111,13 +156,18 @@ export default function Resume() {
                   万物云 Design System
                 </h3>
                 <p className="text-gray-800">
-                  负责设计系统的搭建、维护和推广。支持了5个部门20位设计师的日常设计工作，提升了设计效率和统一性。
+                  这是一个被万物云内部5个部门20位以上设计师使用的设计系统，包含了设计元素、基础组件、业务组件三层结构。实现了统一设计风格、提升设计效率。
                 </p>
               </li>
               <li className="space-y-2">
                 <h3 className="font-serif font-bold text-lg">飞地 App</h3>
                 <p className="text-gray-800">
-                  主导了2.0的改版，承担了PM和设计的工作。重构了整个产品，优化了设计语言。产品曾被多个安卓应用市场评选为精品应用。
+                  作为产品负责人、产品经理和设计师，我承担了飞地 2.0
+                  的开发工作。该产品包括移动端 App
+                  和网页版网站，是一款致力于提供诗歌内容的应用，在每日更新的基础上，为爱好者们打造了一个自由的诗歌世界。
+                </p>
+                <p className="text-gray-800">
+                  飞地获得过多家应用市场评选的设计奖项，获得了业内及用户的高度认可。
                 </p>
               </li>
             </ol>
@@ -179,9 +229,7 @@ export default function Resume() {
       {/* 提醒查看完整简历 */}
       <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
         <div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
-          <p className="text-sm leading-6 text-white">
-              查看完整简历请联系我
-          </p>
+          <p className="text-sm leading-6 text-white">查看完整简历请联系我</p>
         </div>
       </div>
     </main>
