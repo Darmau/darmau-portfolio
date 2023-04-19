@@ -54,9 +54,8 @@ export default function RootLayout({
       <head>
         <script
           async
-          defer
-          data-website-id="ac031c1c-b0c4-4f13-8930-78be63186d9a"
-          src="https://analytics.darmau.design/umami.js"
+          src="https://analytics.darmau.design/script.js"
+          data-website-id="503f127c-3403-46f5-b7c3-64e848dc1fb7"
         ></script>
       </head>
       <body>
