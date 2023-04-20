@@ -68,6 +68,8 @@ export default async function Project(context: any) {
   );
 }
 
+export const revalidate = 60;
+
 const GET_PATHS = gql`
   query Portfolios {
     portfolios {
