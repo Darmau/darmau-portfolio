@@ -56,6 +56,8 @@ export default function RootLayout({
           async
           src="https://analytics.darmau.design/script.js"
           data-website-id="503f127c-3403-46f5-b7c3-64e848dc1fb7"
+          data-do-not-track="true"
+          data-cache="true"
         ></script>
       </head>
       <body>
