@@ -32,8 +32,7 @@ export default function Header({ id }: { id: string }) {
         visible ? "" : "transform -translate-y-full"
       }`}
     >
-      <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <Link href="/" className="-m-1.5 p-1.5">
           <h1 className="font-title font-bold text-lg">darmau.dev</h1>
         </Link>
@@ -48,16 +47,29 @@ export default function Header({ id }: { id: string }) {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              target="_blank"
-              className="text-base leading-6 text-gray-900"
-            >
-              {item.name}
-            </a>
-          ))}
+          <a
+            key="blog"
+            href="https://darmau.design"
+            target="_blank"
+            className="text-base leading-6 text-gray-900"
+          >
+            Blog
+          </a>
+          <a
+            key="github"
+            href="https://github.com/Darmau"
+            target="_blank"
+            className="text-base leading-6 text-gray-900"
+          >
+            GitHub
+          </a>
+          <Link
+            key="resume"
+            href="/resume"
+            className="text-base leading-6 text-gray-900"
+          >
+            Resume
+          </Link>
         </div>
       </nav>
       <Dialog
@@ -84,16 +96,29 @@ export default function Header({ id }: { id: string }) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    target="_blank"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                <a
+                  key="blog"
+                  href="https://darmau.design"
+                  target="_blank"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Blog
+                </a>
+                <a
+                  key="github"
+                  href="https://github.com/Darmau"
+                  target="_blank"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  GitHub
+                </a>
+                <Link
+                  key="resume"
+                  href="/resume"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Resume
+                </Link>
               </div>
             </div>
           </div>

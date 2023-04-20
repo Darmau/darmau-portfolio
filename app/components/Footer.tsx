@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer({ id }: { id: string }) {
   return (
     <footer className="transparent border-t border-black" id={id}>
@@ -6,17 +8,33 @@ export default function Footer({ id }: { id: string }) {
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"
         >
-          {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a
-                href={item.href}
-                target="_blank"
-                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-              >
-                {item.name}
-              </a>
-            </div>
-          ))}
+          <div key="blog" className="pb-6">
+            <a
+              href="https://darmau.design"
+              target="_blank"
+              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+            >
+              Blog
+            </a>
+          </div>
+          <div key="github" className="pb-6">
+            <a
+              href="https://github.com/Darmau"
+              target="_blank"
+              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+            >
+              Github
+            </a>
+          </div>
+          <div key="resume" className="pb-6">
+            <Link
+              href="/resume"
+              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+            >
+              Resume
+            </Link>
+          </div>
+
         </nav>
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
@@ -40,11 +58,6 @@ export default function Footer({ id }: { id: string }) {
 }
 
 const navigation = {
-  main: [
-    { name: "Blog", href: "https://darmau.design" },
-    { name: "GitHub", href: "https://github.com/Darmau" },
-    { name: "Resume", href: "/resume" },
-  ],
   social: [
     {
       name: "Twitter",
