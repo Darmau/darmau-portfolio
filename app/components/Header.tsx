@@ -109,6 +109,7 @@ export default function Header({ id }: { id: string }) {
                   href="https://github.com/Darmau"
                   target="_blank"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  data-umami-event="Github"
                 >
                   GitHub
                 </a>
@@ -116,6 +117,7 @@ export default function Header({ id }: { id: string }) {
                   key="resume"
                   href="/resume"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  data-umami-event="Resume"
                 >
                   Resume
                 </Link>

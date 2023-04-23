@@ -22,6 +22,7 @@ export default function Footer({ id }: { id: string }) {
               href="https://github.com/Darmau"
               target="_blank"
               className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              data-umami-event="Github"
             >
               Github
             </a>
@@ -30,6 +31,7 @@ export default function Footer({ id }: { id: string }) {
             <Link
               href="/resume"
               className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+              data-umami-event="Resume"
             >
               Resume
             </Link>
@@ -43,6 +45,7 @@ export default function Footer({ id }: { id: string }) {
               href={item.href}
               target="_blank"
               className="text-gray-400 hover:text-gray-500"
+              data-umami-event="Social Network"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
