@@ -34,7 +34,7 @@ function useCustomReplace({ html }: { html: string }) {
           return (
             <div className="relative group">
               <Image
-                className="umami--click--full-screen bg-gray-50 object-cover mb-4"
+                className="bg-gray-50 object-cover mb-4"
                 src={domNode.attribs.src}
                 width={1280}
                 height={720}
