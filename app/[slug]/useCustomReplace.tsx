@@ -72,20 +72,7 @@ function useCustomReplace({ html }: { html: string }) {
 
         // 链接样式 对于内部链接使用next/link，对于外部链接使用a标签
         case "a": {
-          const domain = "darmau.design";
-          const url = new URL(domNode.attribs.href);
-          if (url.hostname === domain) {
-            return (
-              <Link
-                className="underline decoration-2 decoration-blue-500 underline-offset-4 hover:decoration-red-500"
-                href={url.pathname}
-              >
-                {domToReact(domNode.children, options)}
-                <RocketLaunchIcon className="inline h-4 w-4 ml-0.5 pb-px text-gray-600" />
-              </Link>
-            );
-          } else {
-            return (
+          return (
               <a
                 className="underline decoration-2 decoration-blue-500 underline-offset-4 hover:decoration-red-500"
                 href={domNode.attribs.href}
@@ -95,7 +82,6 @@ function useCustomReplace({ html }: { html: string }) {
                 <LinkIcon className="inline h-4 w-4 ml-0.5 pb-px text-gray-600" />
               </a>
             );
-          }
         }
 
         // 其他行内样式
